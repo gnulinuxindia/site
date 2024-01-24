@@ -1,0 +1,48 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header title={SITE_TITLE} />
+		<main>
+		<h1> Hello!</h1>
+			<p>
+				Welcome to the <strong>{SITE_TITLE}</strong> website. This is the online hub of the <strong>{SITE_TITLE}</strong> telegram community.
+			</p>
+<hr>
+			<h4>
+				<strong>Who we are</strong>
+			</h4>
+			<p>
+We are a group of people who like to discuss, develop and provide guidance on free software. While the name says GNU Linux India, we are open to all types of software discussion (as long as it’s not proprietary 😉 ).
+			</p>
+			<h4>
+				<strong>How to join?</strong>
+			</h4>
+			<p>
+				You can join our <strong>telegram group <a href="https://t.me/gnulinuxindia">here</a></strong>. <br>
+				You can also join our <strong>matrix room <a href="https://matrix.to/#/#gnulinuxindia:matrix.org">here</a></strong>. <br>
+				We are on IRC as well! Find us on <strong>libera chat @ #gnulinuxindia.</strong>
+				<br><br>
+				All three are bridged so you will stay connected no matter where you come from!
+			</p>
+			<h4>
+				<strong>What do we do?</strong>
+			</h4>
+			<p>
+				We discuss about free software, help people with their issues, and provide guidance on how to use free software. We also have a lot of fun! <br>
+				We have a <strong>codeberg <a href="https://codeberg.org/gnulinuxindia">here</a></strong> where we work on projects together.
+		</main>
+
+
+		<Footer />
+	</body>
+</html>
