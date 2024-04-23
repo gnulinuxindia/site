@@ -1,3 +1,20 @@
+# GNU LINUX INDIA WEBSITE
+
+---
+
+This is the repository for the official website of GNU Linux India. The website is built using the Astro framework.
+
+## TODO
+
+- [ ] Add announcement section
+- [ ] Add contests section
+- [ ] Add more members to the members page
+- [ ] Add i18n support for everything
+- [ ] Add a page for translations
+- [ ] Host some services
+
+Below is the Astro starter kit README.
+
 # Astro Starter Kit: Blog
 
 ```sh
