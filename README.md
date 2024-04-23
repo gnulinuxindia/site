@@ -1,8 +1,25 @@
 # GNU LINUX INDIA WEBSITE
 
+Welcome to the "GLI", as we endeavor to bring you a new and
+improved version of our community's activities in the past.
+
+Since some time we have been feeling that things could be better, so
+we decided to move to GitHub, which has proven itself to be familiar
+to more people, and worthy of higher value in employment options.
+
+Our plans for the year involve multiple tasks, including
+weekly/monthly contests, group projects, self-hosting (if funding is
+found), talks, webinars, meetups, etc. We aim to make the community
+more active, engaging, and beneficial for our members in terms of job
+opportunities, growth, and learning.
+
+Thank you all for being part of GLI, we are excited about this new
+chapter! Let's work together to achieve success and inspire others
+with our knowledge.
+
 ---
 
-This is the repository for the official website of GNU Linux India. The website is built using the Astro framework.
+The website is built using the Astro framework.
 
 ## TODO
 
