@@ -13,6 +13,23 @@ const posts = (await getCollection('member'));
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 		<style>
+			.card {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				border: 1px solid #ddd;
+				border-radius: 25px;
+				padding: 10px;
+				margin: 10px;
+				text-align: center;
+				box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+				transition: 0.3s;
+			}
+
+			.card:hover {
+				box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+			}
 			main {
 				width: 960px;
 			}
@@ -75,16 +92,19 @@ const posts = (await getCollection('member'));
 			</p>
 			<br><hr><br>
 			<section>
-				<ul>
-					{
-						posts.map((post) => (
-							<li>
-								<a href={`/member/${post.slug}/`}>
-									<h4 class="title">{post.data.name} a.k.a {post.data.alias}</h4>
-								</a>
-							</li>
-						))
-					}
+					<ul>
+						{
+							posts.map((post) => (
+								<li>
+									<a href={`/member/${post.slug}/`}>
+										<div class="card">
+											<h4 class="title">{post.data.name}</h4>
+											<p class="alias">{post.data.alias}</p>
+										</div>
+									</a>
+								</li>
+							))
+						}
 				</ul>
 			</section>
 		</main>
