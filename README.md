@@ -1,4 +1,4 @@
-# GNU LINUX INDIA WEBSITE - (https://gnulinuxindia.in)[gnulinuxindia.in]
+# GNU LINUX INDIA WEBSITE - [gnulinuxindia.in](https://gnulinuxindia.in)
 
 ---
 
