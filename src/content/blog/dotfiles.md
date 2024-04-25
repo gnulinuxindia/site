@@ -3,6 +3,7 @@ title: 'Managing dotfiles'
 description: 'A simple way to manage your dotfiles'
 pubDate: '2021-12-23T20:48:59+05:30'
 heroImage: '/dotfiles.jpg'
+author: 'gtlsgamr'
 ---
 
 "Dotfiles" are a way to store configuration of various packages and programs on your system. They are named so because of the '*.*' that precedes their names to keep them hidden.
