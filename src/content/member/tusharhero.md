@@ -1,6 +1,6 @@
 ---
 name: 'tusharhero'
-alias: ''
+alias: 'tusharhero'
 ---
 
 #### Hey there! 👋 I'm tusharhero, good to know you.
