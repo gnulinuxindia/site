@@ -64,7 +64,7 @@ const { title, description, author, pubDate, updatedDate, heroImage } = Astro.pr
 				<div class="prose">
 					<div class="title">
 						<div class="date">
-							By {author} on
+							By {author ? author : "GLI Member"} on
 							<FormattedDate date={pubDate} />
 							{
 								updatedDate && (
