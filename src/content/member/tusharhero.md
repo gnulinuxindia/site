@@ -11,5 +11,6 @@ Yes, I use Emacs- here is [why](https://tusharhero.codeberg.page/why_emacs.html)
 
 #### Contact Me 📬
 
+- **Email:** <tusharhero@sdf.org>
 - **GitHub:** [github.com/tusharhero](https://github.com/tusharhero)
 - **Website:** [tusharhero's pages](https://tusharhero.codeberg.page)
