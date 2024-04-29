@@ -8,11 +8,6 @@
 	display:inline-block;
 }
 
-.navbarlogo:hover{
-	content: url("../../public/logo_angry.png");
-}
-
-
 .copyleft {
 	display:inline-block;
 	transform: rotate(180deg);
