@@ -1,7 +1,7 @@
 ---
 title: 'Shell Script Showcase May is here!'
 description: 'Welcome to our first of the many monthly challenges, which we will be hosting in the future. This month we are looking for the most innovative and unconventional shell scripts out there.'
-pubDate: '2021-12-23T20:48:59+05:30'
+pubDate: '2024-04-29'
 heroImage: '/shell-script-may.webp'
 author: 'gtlsgamr'
 ---
