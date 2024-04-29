@@ -1,4 +1,4 @@
-# GNU LINUX INDIA WEBSITE - [gnulinuxindia.in](https://gnulinuxindia.in)
+# GNU LINUX INDIA WEBSITE - [gnulinuxindia.sh](https://gnulinuxindia.sh)
 
 Welcome to the "GLI", as we endeavor to bring you a new and
 improved version of our community's activities in the past.
