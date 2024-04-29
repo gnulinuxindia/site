@@ -3,7 +3,7 @@ title: 'Shell Script Showcase May is here!'
 description: 'Welcome to our first of the many monthly challenges, which we will be hosting in the future. This month we are looking for the most innovative and unconventional shell scripts out there.'
 pubDate: '2024-04-29'
 heroImage: '/shell-script-may.webp'
-author: 'gtlsgamr'
+author: 'gtlsgamr, tusharhero'
 ---
 🎉 Announcing the "Shell Script Showcase May" Challenge! 🎉
 
@@ -21,6 +21,13 @@ The possibilities are endless! You could whip up scripts that generate ASCII art
 3. We will host a video call where everyone can show off their scripts.
 3. The community will vote for their favorites via polls.
 4. The script with the most votes wins!
+
+### Rules
+1. Only POSIX-like shells are allowed, more explicitly only
+   - Bash
+   - Zsh
+   - Fish
+   - Dash
 
 ### What's at stake?
 As if the glory of winning weren't enough, the ultimate champion will receive a shiny **300 rupee Amazon gift card** as a token of our appreciation for their shell scripting prowess.
