@@ -1,64 +1,181 @@
 ---
 import HeaderLink from './HeaderLink.astro';
-import { SITE_TITLE } from '../consts';
+import ThemeIcon from './ThemeIcon.astro';
+const menu = [
+    {"name": "Home", "link": "/"},
+    {"name": "Blog", "link": "/blog"},
+    {"name": "Members", "link": "/member"},
+    {"name": "Roadmap", "link": "/roadmap"},
+    {"name": "News", "link": "/news"}
+]
 ---
 
 <header>
-	<nav>
-		<a class="logoTitle" href="/"><img class="navbarlogo" src="/logo.png" alt="Logo of GLI"/></a>
-		<div class="internal-links">
-			<HeaderLink href="/">Home</HeaderLink>
-			<HeaderLink href="/blog">Blog</HeaderLink>
-			<HeaderLink href="/member">Members</HeaderLink>
-		</div>
-		<div class="social-links">
-			<a href="https://github.com/gnulinuxindia" target="_blank">
-				<span class="sr-only">Go to GLI's github repo</span>
-				<img width=50px src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Git_icon.svg" alt="Git logo">
-
-
-			</a>
-		</div>
-	</nav>
+    <nav>
+        <a class="logoTitle" href="/"><img class="navbarlogo" src="/logo.png" alt="Logo of GLI"/></a>
+        <div class="internal-links">
+            {menu.map(item => {
+                return (
+                        <HeaderLink href={item.link}>{item.name}</HeaderLink>)
+            })}
+        </div>
+        <div class="right-side-stuff">
+            <ThemeIcon/>
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </nav>
+    <div class="mobile-menu">
+        <div class="internal-links-mobile">
+            {menu.map(item => {
+                return (
+                        <HeaderLink href={item.link}>{item.name}</HeaderLink>)
+            })}
+        </div>
+    </div>
 </header>
 <style>
-	header {
-		margin: 0;
-		padding: 0 1em;
-		background: white;
-		box-shadow: 0 2px 8px rgba(var(--black), 5%);
-	}
-	h2 {
-		margin: 0;
-		font-size: 1em;
-	}
+    header {
+        margin: 0;
+        padding: 0 1em;
+        box-shadow: 0 2px 8px var(--black), 5%;
+    }
 
-	h2 a,
-	h2 a.active {
-		text-decoration: none;
-	}
-	nav {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-	}
-	nav a {
-		padding: 1em 0.5em;
-		color: var(--black);
-		border-bottom: 4px solid transparent;
-		text-decoration: none;
-	}
-	nav a.active {
-		text-decoration: none;
-		border-bottom-color: var(--accent);
-	}
-	.social-links,
-	.social-links a {
-		display: flex;
-	}
-	@media (max-width: 720px) {
-		.social-links {
-			display: none;
-		}
-	}
+    header {
+        background: linear-gradient(90deg, var(--black), var(--black) 50%, var(--accent) 50%);
+    }
+
+    .right-side-stuff {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        gap: 1em;
+    }
+
+    h2 {
+        margin: 0;
+        font-size: 1em;
+    }
+
+    h2 a,
+    h2 a.active {
+        text-decoration: none;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: linear-gradient(90deg, var(--black), var(--black) 50%, var(--accent) 50%);
+    }
+
+    nav a {
+        padding: 1em 0.5em;
+        color: var(--black);
+        border-bottom: 4px solid transparent;
+        text-decoration: none;
+    }
+
+    nav a.active {
+        text-decoration: none;
+        border-bottom-color: var(--accent);
+    }
+
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        font-size: 1.5em;
+    }
+
+    .hamburger div {
+        width: 30px;
+        height: 3px;
+        background-color: var(--accent);
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+
+    .social-links {
+        display: flex;
+    }
+
+    .internal-links {
+        display: flex;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .social-links {
+        flex-direction: row;
+    }
+
+    .mobile-menu {
+        display: none;
+        flex-direction: column;
+    }
+
+    @media (max-width: 720px) {
+
+        .hamburger {
+            display: block;
+        }
+
+        .mobile-menu.show {
+            display: flex;
+        }
+
+        .social-links-mobile {
+            flex-direction: column;
+            width: 100%;
+            text-align: center;
+            justify-content: center;
+            align-content: center;
+            display: flex;
+        }
+
+        .internal-links-mobile {
+            flex-direction: column;
+            width: 100%;
+            justify-content: center;
+            align-content: center;
+            text-align: center;
+            display: flex;
+        }
+
+        .social-links, .internal-links {
+            display: none;
+        }
+
+        .internal-links-mobile {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .internal-links-mobile a {
+            font-size: 1.5em; /* Adjust this value to change the font size */
+            width: 100%;
+            text-align: center;
+            padding: 10px 0; /* Adjust this value to change the padding */
+        }
+
+        .social-links-mobile {
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+            align-items: center;
+            margin-top: auto; /* This will push the social links to the bottom */
+        }
+    }
 </style>
+<script>
+    document.querySelector('.hamburger').addEventListener('click', () => {
+        document.querySelector('.mobile-menu').classList.toggle('show');
+    });
+</script>

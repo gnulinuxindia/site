@@ -1,0 +1,55 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import {SITE_TITLE, SITE_DESCRIPTION} from '../consts';
+const roadmapItems = [
+    {name: 'Add i18n support for everything', checked: false},
+    {name: 'Add a page for translations', checked: false},
+    {name: 'Host some services', checked: false},
+    {name: "Get a domain name", checked: true},
+];
+---
+<!doctype html>
+<html lang="en">
+<head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION}/>
+</head>
+<body>
+<Header title={SITE_TITLE}/>
+<main>
+    <h1>Roadmap</h1>
+    <p>Since time immortal projects like these have started and died, mostly due to the lack of a clear plan.
+        Here we are trying to create just that. We hope you can follow this roadmap and <a
+                href="https://github.com/gnulinuxindia/site">contribute</a> to the site improvements as time passes.</p>
+    <form>
+        {roadmapItems.map((item) => (
+                <label>
+                    <input type="checkbox" checked={item.checked} disabled/>
+                    {item.name}
+                </label>
+        ))}
+    </form>
+</main>
+
+
+<Footer/>
+</body>
+</html>
+<style>
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    form label {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    form input[type="checkbox"] {
+        transform: scale(1.5);
+    }
+</style>

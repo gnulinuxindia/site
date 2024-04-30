@@ -1,0 +1,38 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import {SITE_TITLE, SITE_DESCRIPTION} from '../consts';
+const news = [
+    {
+        title: 'The monthly challenge for May begins tomorrow! We hope to see lots of people participating this first ever GLI monthly challenge!',
+        link: '/blog/shell-script-show-case-may-24/',
+        date: '30th April 2024'
+    }
+]
+---
+<!doctype html>
+<html lang="en">
+<head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION}/>
+</head>
+<body>
+<Header title={SITE_TITLE}/>
+<main>
+    <h1>Site news! 📰</h1>
+    <ul>
+        {news.map((item) => {
+            return (
+                    <li>
+                        {item.title}<br>
+                        <a href={item.link}>Read more</a>
+                        - <em>{item.date}</em></li>
+            )
+        })}
+    </ul>
+</main>
+
+
+<Footer/>
+</body>
+</html>

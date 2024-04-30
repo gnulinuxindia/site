@@ -1,37 +1,86 @@
 ---
 const today = new Date();
+import {execSync} from 'child_process';
+
+const getLatestCommit = () => {
+    try {
+        return execSync('git rev-parse HEAD').toString().trim();
+    } catch (error) {
+        console.error('Error getting latest commit:', error);
+        return 'unknown';
+    }
+};
+
+const latestCommit = getLatestCommit();
 ---
 
 <footer>
 
-	{today.getFullYear()}, GLI.
-	<div class="social-links">
+    <div class="social-links">
 
-		<a href="https://github.com/gnulinuxindia" target="_blank">
-			<span class="sr-only">Go to GLI's GitHub repo</span>
-			<img width=50px src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Git_icon.svg" alt="Git logo">
+        <span>       {today.getFullYear()}, GLI</span>
+        <span> Latest Build: <a class="commit" href={"https://github.com/gnulinuxindia/site/commit/" + latestCommit}
 
-		</a>
-	</div>
+                                target="_blank">#{latestCommit.substring(0, 7)}</a></span>
+        <span><a href="https://t.me/GnuLinuxIndia" target="_blank">
+            <span class="sr-only">Join us on telegram</span>
+            <img width=25px src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg"
+                 alt="Telegram logo">
+        </a> <a href="https://github.com/gnulinuxindia" target="_blank">
+            <span class="sr-only">Go to GLI's GitHub repo</span>
+            <img width=25px src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Git_icon.svg" alt="Git logo">
+        </a></span>
+    </div>
+
 </footer>
 <style>
-	footer {
-		padding: 2em 1em 6em 1em;
-		background: linear-gradient(var(--gray-gradient)) no-repeat;
-		color: rgb(var(--gray));
-		text-align: center;
-	}
-	.social-links {
-		display: flex;
-		justify-content: center;
-		gap: 1em;
-		margin-top: 1em;
-	}
-	.social-links a {
-		text-decoration: none;
-		color: rgb(var(--gray));
-	}
-	.social-links a:hover {
-		color: rgb(var(--gray-dark));
-	}
+    footer {
+        padding: 2em 1em 6em 1em;
+        background: linear-gradient(var(--bg-gradient)) no-repeat;
+        color: rgb(var(--primary-text-color));
+        text-align: center;
+    }
+
+    .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 1em;
+        margin-top: 1em;
+    }
+
+    .social-links a {
+        text-decoration: none;
+        color: rgb(var(--primary-text-color));
+    }
+
+    .social-links img {
+        vertical-align: middle;
+    }
+
+    .social-links a:hover {
+        color: rgb(var(--primary-text-color));
+    }
+
+    .commit {
+        color: var(--accent) !important;
+    }
+
+    .commit:hover {
+        color: var(--accent-dark) !important;
+        text-decoration-line: underline;
+
+    }
+
+    @media (max-width: 768px) {
+
+        .footer {
+            font-size: 0.8em;
+        }
+
+        .social-links {
+            flex-direction: column;
+            margin: 0;
+            gap: 0.3em;
+        }
+    }
 </style>
