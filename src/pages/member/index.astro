@@ -2,112 +2,139 @@
 import BaseHead from '../../components/BaseHead.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
-import { getCollection } from 'astro:content';
+import {SITE_TITLE, SITE_DESCRIPTION} from '../../consts';
+import {getCollection} from 'astro:content';
 
 const posts = (await getCollection('member'));
 ---
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-		<style>
-			.card {
-				display: flex;
-				flex-direction: column;
-				justify-content: center;
-				align-items: center;
-				border: 1px solid #ddd;
-				border-radius: 25px;
-				padding: 10px;
-				margin: 10px;
-				text-align: center;
-				box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-				transition: 0.3s;
-			}
+<head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION}/>
+    <style>
+        .card {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ddd;
+            border-radius: 25px;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+        }
 
-			.card:hover {
-				box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-			}
-			main {
-				width: 960px;
-			}
-			ul {
-				display: flex;
-				flex-wrap: wrap;
-				gap: 2rem;
-				list-style-type: none;
-				margin: 0;
-				padding: 0;
-			}
-			ul li {
-				width: calc(50% - 1rem);
-			}
-			ul li * {
-				text-decoration: none;
-				transition: 0.2s ease;
-			}
-			ul li img {
-				margin-bottom: 0.5rem;
-				border-radius: 12px;
-			}
-			ul li a {
-				display: block;
-			}
-			.title {
-				margin: 0;
-				color: rgb(var(--black));
-				line-height: 1;
-			}
-			.date {
-				margin: 0;
-				color: rgb(var(--gray));
-			}
-			ul li a:hover h4,
-			ul li a:hover .date {
-				color: rgb(var(--accent));
-			}
-			ul a:hover img {
-				box-shadow: var(--box-shadow);
-			}
-			@media (max-width: 720px) {
-				ul {
-					gap: 0.5em;
-				}
-				ul li {
-					width: 100%;
-					text-align: center;
-				}
-			}
-		</style>
-	</head>
-	<body>
-		<Header />
-		<main>
-			<h1>Meet our members</h1>
-			<p>
-				These are some of the people who are a part of GLI. To add your name to the list, just create a pull request on the GitHub repo.
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        }
 
-			</p>
-			<br><hr><br>
-			<section>
-					<ul>
-						{
-							posts.map((post) => (
-								<li>
-									<a href={`/member/${post.slug}/`}>
-										<div class="card">
-											<h4 class="title">{post.data.name}</h4>
-											<p class="alias">{post.data.alias}</p>
-										</div>
-									</a>
-								</li>
-							))
-						}
-				</ul>
-			</section>
-		</main>
-		<Footer />
-	</body>
+        .title {
+            font-size: 1.5em;
+            color: var(--primary-text-color);
+        }
+
+        a {
+            text-decoration: none;
+            color: var(--primary-text-color);
+        }
+
+        .alias {
+            color: var(--accent);
+        }
+
+        main {
+            width: 960px;
+        }
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        ul li {
+            width: calc(50% - 1rem);
+        }
+
+        ul li * {
+            text-decoration: none;
+            transition: 0.2s ease;
+        }
+
+        ul li img {
+            margin-bottom: 0.5rem;
+            border-radius: 12px;
+        }
+
+        ul li a {
+            display: block;
+        }
+
+        .title {
+            margin: 0;
+            color: var(--black);
+            line-height: 1;
+        }
+
+        .date {
+            margin: 0;
+            color: var(--gray);
+        }
+
+        ul li a:hover h4,
+        ul li a:hover .date {
+            color: var(--accent);
+        }
+
+        ul a:hover img {
+            box-shadow: var(--box-shadow);
+        }
+
+        @media (max-width: 720px) {
+            ul {
+                gap: 0.7em;
+            }
+
+            ul li {
+                width: 100%;
+                text-align: center;
+                padding: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+<Header/>
+<main>
+    <h1>Meet our members</h1>
+    <p>
+        These are some of the people who are a part of GLI. To add your name to the list, just create a pull request on
+        the GitHub repo.
+
+    </p>
+    <br>
+    <hr>
+    <br>
+    <section>
+        <ul>
+            {
+                posts.map((post) => (
+                        <li>
+                            <a href={`/member/${post.slug}/`}>
+                                <h4 class="title">{post.data.name}</h4> a.k.a {post.data.alias}
+                            </a>
+                        </li>
+                ))
+            }
+        </ul>
+    </section>
+</main>
+<Footer/>
+</body>
 </html>
