@@ -3,6 +3,9 @@
   https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
   License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
  */
+
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 .navbarlogo {
     height: 90px;
     display: inline-block;
@@ -32,24 +35,9 @@
     --bg-gradient: linear-gradient(180deg, #333 0%, #1a1a1a 100%); /* A dark gradient */
 }
 
-@font-face {
-    font-family: 'Atkinson';
-    src: url('/fonts/atkinson-regular.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Atkinson';
-    src: url('/fonts/atkinson-bold.woff') format('woff');
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-}
 
 body {
-    font-family: 'Atkinson', Arial, Helvetica, sans-serif;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
     margin: 0;
     padding: 0;
     text-align: left;
