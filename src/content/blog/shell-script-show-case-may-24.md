@@ -32,7 +32,8 @@ imagination run wild and show us what you've got!
 ### How does it work?
 
 1. Create your unique shell script during the month of May.
-2. Share your masterpiece with the community before 25th May.
+2. Share your masterpiece with the community before 25th May. (You can share on any of the communication channels, you
+   can also give a github link.)
 3. We will host a video call where everyone can show off their scripts.
 3. The community will vote for their favorites via polls.
 4. The script with the most votes wins!
