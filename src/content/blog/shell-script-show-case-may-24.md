@@ -46,4 +46,11 @@ a token of our appreciation for their shell scripting prowess.
 So, dust off your keyboard, fire up your terminal, and get ready to amaze us with your shell scripting skills! Let's
 make this "Shell Script Showcase May" one for the history books!
 
+### Okay, but how do I join?
+
+You can find us at [telegram](https://t.me/GnuLinuxIndia),
+    [matrix](https://matrix.to/#/#glispace:matrix.org), and
+    [xmpp](xmpp:gnulinuxindia@conference.projectsegfau.lt), just
+    come by and say hi.
+
 Happy scripting! 🚀🐚
