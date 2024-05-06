@@ -49,8 +49,27 @@ make this "Shell Script Showcase May" one for the history books!
 ### Okay, but how do I join?
 
 You can find us at [telegram](https://t.me/GnuLinuxIndia),
-    [matrix](https://matrix.to/#/#glispace:matrix.org), and
-    [xmpp](xmpp:gnulinuxindia@conference.projectsegfau.lt), just
-    come by and say hi.
+[matrix](https://matrix.to/#/#glispace:matrix.org), and
+[xmpp](xmpp:gnulinuxindia@conference.projectsegfau.lt), just
+come by and say hi.
 
 Happy scripting! 🚀🐚
+
+### Submissions
+
+Below are the submissions for the Shell Script Showcase May 2024:
+
+<details>
+<summary>My friend tux by @gtlsgamr</summary>
+
+<a href="https://github.com/gtlsgamr/my-friend-tux">My Friend Tux</a><br>
+<small>Author: <a href="/member/gtlsgamr">@gtlsgamr</a></small><br>
+
+  This script is a digital companion for you. It can help you with absolutely nothing, other than just being cute. It's
+  a simple script that displays a penguin which will grow as time goes by. You have to feed him by running the script
+  every day. If you don't feed him, he will die. So, don't let him die. He also shows you the current date and time.
+  That's it. Nothing more, nothing less. On the bright side, he is a good listener. You can talk to him whenever you
+  feel lonely. He will listen to you without any judgement. So, go ahead and run the script. Have fun!
+</details>
+
+
