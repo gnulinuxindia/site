@@ -72,4 +72,13 @@ Below are the submissions for the Shell Script Showcase May 2024:
   feel lonely. He will listen to you without any judgement. So, go ahead and run the script. Have fun!
 </details>
 
+<details>
+<summary>NetTacToe by @tusharhero</summary>
 
+<a href="https://github.com/tusharhero/nettactoe">NetTacToe</a><br>
+<small>Author: <a href="/member/tusharhero">@tusharhero</a></small><br>
+
+A multiplayer Tic Tac Toe game, written in GNU Bash. The
+multiplayer element is implemented with help of GNU Netcat. There
+should be an article with more details [here](https://tusharhero.codeberg.page/netcat-multiplayer-tictactoe.html).
+</details>
