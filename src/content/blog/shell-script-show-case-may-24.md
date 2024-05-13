@@ -70,6 +70,15 @@ Below are the submissions for the Shell Script Showcase May 2024:
   every day. If you don't feed him, he will die. So, don't let him die. He also shows you the current date and time.
   That's it. Nothing more, nothing less. On the bright side, he is a good listener. You can talk to him whenever you
   feel lonely. He will listen to you without any judgement. So, go ahead and run the script. Have fun!
+
+<summary>NetTacToe by @tusharhero</summary>
+
+<a href="https://github.com/tusharhero/nettactoe">NetTacToe</a><br>
+<small>Author: <a href="/member/tusharhero">@tusharhero</a></small><br>
+
+	A multiplayer Tic Tac Toe game, written in GNU Bash. The
+	multiplayer element is implemented with help of GNU Netcat. There
+	should be an article with more details [here](https://tusharhero.codeberg.page/netcat-multiplayer-tictactoe.html).
 </details>
 
 
