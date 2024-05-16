@@ -82,3 +82,13 @@ A multiplayer Tic Tac Toe game, written in GNU Bash. The
 multiplayer element is implemented with help of GNU Netcat. There
 should be an article with more details [here](https://tusharhero.codeberg.page/netcat-multiplayer-tictactoe.html).
 </details>
+
+<details>
+<summary>Shelltest by @samisthefbi</summary>
+
+<a href="https://github.com/samisthefbi/shelltest">shelltest</a><br>
+<small>Author: <a href="https://samisthefbi.github.io/">@samisthefbi</a></small><br>
+
+Shelltest is a wordle-like game which challenges players to guess GNU/Linux commands within a set number of attempts. In this terminal-based game, players guess the correct GNU/Linux command in a limited number of attempts. Each guess prompts feedback on the accuracy of the command. It challenges players' command-line knowledge, offering a compact and engaging way to test their proficiency in terminal commands.
+
+</details>
