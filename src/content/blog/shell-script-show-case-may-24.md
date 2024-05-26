@@ -92,3 +92,13 @@ should be an article with more details [here](https://tusharhero.codeberg.page/n
 Shelltest is a wordle-like game which challenges players to guess GNU/Linux commands within a set number of attempts. In this terminal-based game, players guess the correct GNU/Linux command in a limited number of attempts. Each guess prompts feedback on the accuracy of the command. It challenges players' command-line knowledge, offering a compact and engaging way to test their proficiency in terminal commands.
 
 </details>
+
+<details>
+<summary>mitm by @virinci</summary>
+
+<a href="https://codeberg.org/virinci/mitm">mitm</a><br>
+<small>Author: <a href="https://codeberg.org/virinci/">@virinci</a></small><br>
+
+A general purpose intermediary/relay server for communication between two peers. The two peers are identified and connected using a shared secret phrase. The purpose of this script is to allow communication between peers that are not on the same LAN. This script can be hosted on some server that has enabled port forwarding for some port and multiple clients can use this server instead of all of them having to support port forwarding on their own.
+
+</details>
