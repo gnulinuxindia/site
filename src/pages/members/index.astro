@@ -126,7 +126,7 @@ const posts = (await getCollection('member'));
             {
                 posts.map((post) => (
                         <li>
-                            <a href={`/member/${post.slug}/`}>
+                            <a href={`/members/${post.slug}/`}>
                                 <h4 class="title">{post.data.name}</h4> a.k.a {post.data.alias}
                             </a>
                         </li>
