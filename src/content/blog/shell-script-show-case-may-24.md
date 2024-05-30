@@ -65,11 +65,11 @@ Below are the submissions for the Shell Script Showcase May 2024:
 <a href="https://github.com/gtlsgamr/my-friend-tux">My Friend Tux</a><br>
 <small>Author: <a href="/member/gtlsgamr">@gtlsgamr</a></small><br>
 
-  This script is a digital companion for you. It can help you with absolutely nothing, other than just being cute. It's
-  a simple script that displays a penguin which will grow as time goes by. You have to feed him by running the script
-  every day. If you don't feed him, he will die. So, don't let him die. He also shows you the current date and time.
-  That's it. Nothing more, nothing less. On the bright side, he is a good listener. You can talk to him whenever you
-  feel lonely. He will listen to you without any judgement. So, go ahead and run the script. Have fun!
+This script is a digital companion for you. It can help you with absolutely nothing, other than just being cute. It's
+a simple script that displays a penguin which will grow as time goes by. You have to feed him by running the script
+every day. If you don't feed him, he will die. So, don't let him die. He also shows you the current date and time.
+That's it. Nothing more, nothing less. On the bright side, he is a good listener. You can talk to him whenever you
+feel lonely. He will listen to you without any judgement. So, go ahead and run the script. Have fun!
 </details>
 
 <details>
@@ -89,7 +89,10 @@ should be an article with more details [here](https://tusharhero.codeberg.page/n
 <a href="https://github.com/samisthefbi/shelltest">shelltest</a><br>
 <small>Author: <a href="https://samisthefbi.github.io/">@samisthefbi</a></small><br>
 
-Shelltest is a wordle-like game which challenges players to guess GNU/Linux commands within a set number of attempts. In this terminal-based game, players guess the correct GNU/Linux command in a limited number of attempts. Each guess prompts feedback on the accuracy of the command. It challenges players' command-line knowledge, offering a compact and engaging way to test their proficiency in terminal commands.
+Shelltest is a wordle-like game which challenges players to guess GNU/Linux commands within a set number of attempts. In
+this terminal-based game, players guess the correct GNU/Linux command in a limited number of attempts. Each guess
+prompts feedback on the accuracy of the command. It challenges players' command-line knowledge, offering a compact and
+engaging way to test their proficiency in terminal commands.
 
 </details>
 
@@ -99,6 +102,16 @@ Shelltest is a wordle-like game which challenges players to guess GNU/Linux comm
 <a href="https://codeberg.org/virinci/mitm">mitm</a><br>
 <small>Author: <a href="https://codeberg.org/virinci/">@virinci</a></small><br>
 
-A general purpose intermediary/relay server for communication between two peers. The two peers are identified and connected using a shared secret phrase. The purpose of this script is to allow communication between peers that are not on the same LAN. This script can be hosted on some server that has enabled port forwarding for some port and multiple clients can use this server instead of all of them having to support port forwarding on their own.
+A general purpose intermediary/relay server for communication between two peers. The two peers are identified and
+connected using a shared secret phrase. The purpose of this script is to allow communication between peers that are not
+on the same LAN. This script can be hosted on some server that has enabled port forwarding for some port and multiple
+clients can use this server instead of all of them having to support port forwarding on their own.
 
 </details>
+<br>
+
+### Winner Announcement
+
+We are thrilled to announce that the winner of the “Shell Script Showcase May” challenge is NetTacToe by @tusharhero!
+Congratulations on creating the classic time passer using GNU Bash and Netcat. Your creativity and
+skill have truly impressed the community. Enjoy your 300 rupee Amazon gift card, and keep up the amazing work! 🎉
