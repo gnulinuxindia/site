@@ -15,5 +15,5 @@ Most of my hobby projects are out there on public git repos (links below).
 #### Links
 
 - Website: [nikhilmwarrier.codeberg.page](https://nikhilmwarrier.codeberg.page/)
-- Codeberg: [codeberg.org/nikhilmwarrier](https://github.com/nikhilmwarrier)
+- Codeberg: [codeberg.org/nikhilmwarrier](https://codeberg.org/nikhilmwarrier)
 - GitHub: [github.com/nikhilmwarrier](https://github.com/nikhilmwarrier)
