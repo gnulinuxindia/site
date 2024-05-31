@@ -48,6 +48,7 @@ body {
     color: var(--primary-text-color);
     font-size: 20px;
     line-height: 1.7;
+    transition: background 0.2s ease;
 }
 
 main {
