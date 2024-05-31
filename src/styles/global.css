@@ -55,6 +55,7 @@ main {
     max-width: calc(100% - 2em);
     margin: auto;
     min-height: 70vh;
+    margin-top: 4em;
 }
 
 h1,
@@ -156,7 +157,8 @@ hr {
 }
 
 header {
-    width: 50%;
+    min-width: fit-content;
+    width: 720px;
     margin: auto !important;
     border-radius: 1.3em;
 }
