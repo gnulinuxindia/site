@@ -73,17 +73,23 @@ const menu = [
     }
 
     nav a {
-        padding: 1em 0.5em;
+        padding: 0 0.5em;
+        margin: 0 0.5em;
         color: var(--black);
-        border-bottom: 4px solid transparent;
+        border-top: 0.15em solid transparent;
         text-decoration: none;
     }
 
     nav a.active {
         text-decoration: none;
-        border-bottom-color: var(--accent);
+        border-top-color: var(--accent);
     }
 
+    nav a.logoTitle {
+        padding-left: 0;
+        margin-left: 0;
+        margin-right: 1em;
+    }
 
     .hamburger {
         display: block;
