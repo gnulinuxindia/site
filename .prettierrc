@@ -3,5 +3,6 @@
     "useTabs": false,
     "bracketSpacing": true,
     "arrowParens": "avoid",
-    "proseWrap": "preserve"
+    "proseWrap": "preserve",
+    "singleQuote": true
 }
