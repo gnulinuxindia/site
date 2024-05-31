@@ -17,17 +17,18 @@
 }
 
 :root {
-    --accent: hsl(180, 39%, 50%); /* This can remain the same if it looks good on dark backgrounds */
-    --accent-alt: hsl(180, 39%, 30%);
-    --primary-text-color: hsl(198, 20%, 10%);
-    --secondary-text-color: hsl(198, 20%, 20%);
-    --primary-background-color: #dadada;
+    --accent: #e0720f;;
+    --accent-alt: #da6e00;
+    --primary-text-color: #000;
+    --secondary-text-color: #1e1e1e;
+    --primary-background-color: #fff;
     --code-background: #d9d9d9;
 }
 
 .dark {
     /* Dark Theme */
-    --accent-alt: hsl(180, 39%, 75%); /* This can also remain the same or be adjusted for better visibility */
+    --accent: hsl(45, 70%, 60%);
+    --accent-alt: hsl(45, 70%, 70%); /* This can also remain the same or be adjusted for better visibility */
     --primary-text-color: hsl(0, 0%, 85%); /* White text for dark backgrounds */
     --secondary-text-color: hsl(0, 0%, 65%); /* White text for dark backgrounds */
     --primary-background-color: #141b1e; /* A deep grey for the primary background */
