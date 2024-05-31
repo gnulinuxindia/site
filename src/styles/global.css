@@ -17,22 +17,22 @@
 }
 
 :root {
-    --accent: #e0720f;
-    --accent-dark: #da6e00;
+    --accent: #e0720f;;
+    --accent-alt: #da6e00;
     --primary-text-color: #000;
+    --secondary-text-color: #1e1e1e;
     --primary-background-color: #fff;
     --code-background: #d9d9d9;
-    --bg-gradient: linear-gradient(180deg, #fff 0%, #f9f9f9 100%);
 }
 
 .dark {
     /* Dark Theme */
-    --accent: #e0720f; /* This can remain the same if it looks good on dark backgrounds */
-    --accent-dark: #da6e00; /* This can also remain the same or be adjusted for better visibility */
-    --primary-text-color: #fff; /* White text for dark backgrounds */
-    --primary-background-color: #303030; /* A deep grey for the primary background */
-    --code-background: #0a0f3c; /* A darker shade for code blocks */
-    --bg-gradient: linear-gradient(180deg, #333 0%, #1a1a1a 100%); /* A dark gradient */
+    --accent: hsl(45, 70%, 60%);
+    --accent-alt: hsl(45, 70%, 70%); /* This can also remain the same or be adjusted for better visibility */
+    --primary-text-color: hsl(0, 0%, 85%); /* White text for dark backgrounds */
+    --secondary-text-color: hsl(0, 0%, 65%); /* White text for dark backgrounds */
+    --primary-background-color: #141b1e; /* A deep grey for the primary background */
+    --code-background: #232a2d; /* A darker shade for code blocks */
 }
 
 
@@ -48,6 +48,7 @@ body {
     color: var(--primary-text-color);
     font-size: 20px;
     line-height: 1.7;
+    transition: background 0.2s ease;
 }
 
 main {
@@ -65,7 +66,7 @@ h4,
 h5,
 h6 {
     margin: 0 0 0.5rem 0;
-    color: var(--primary-text-color);
+    color: var(--secondary-text-color);
     line-height: 1.2;
 }
 
@@ -96,10 +97,11 @@ b {
 
 a {
     color: var(--accent);
+    transition: all 0.2s ease;
 }
 
 a:hover {
-    color: var(--accent);
+    color: var(--accent-alt);
 }
 
 p {

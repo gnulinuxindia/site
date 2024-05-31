@@ -13,22 +13,37 @@
     #themeToggle {
         border: 0;
         background: none;
+        cursor: pointer;
     }
 
     .sun {
+        opacity: 1;
         fill: var(--primary-text-color);
+        transform: translateY(0);
     }
 
     .moon {
-        fill: transparent;
+        opacity: 0;
+        transform: translateY(100%);
     }
 
     :global(.dark) .sun {
-        fill: transparent;
+        opacity: 0;
+        transform: translateY(-100%);
     }
 
     :global(.dark) .moon {
+        opacity: 1;
+        transform: translateY(0);
         fill: var(--primary-text-color);
+    }
+
+    #themeToggle svg > * {
+        transition: all 0.3s ease;
+    }
+
+    #themeToggle:hover svg > *{
+        fill: var(--accent-alt);
     }
 </style>
 
