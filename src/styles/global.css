@@ -160,7 +160,8 @@ hr {
 }
 
 header {
-  width: 50%;
+  min-width: fit-content;
+  width: 720px;
   margin: auto !important;
   border-radius: 1.3em;
 }
