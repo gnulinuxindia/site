@@ -7,58 +7,58 @@
 @import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 .navbarlogo {
-  height: 90px;
-  display: inline-block;
+    height: 90px;
+    display: inline-block;
 }
 
 .copyleft {
-  display: inline-block;
-  transform: rotate(180deg);
+    display: inline-block;
+    transform: rotate(180deg);
 }
 
 :root {
-  --accent: #e0720f;
-  --accent-dark: #da6e00;
-  --primary-text-color: #000;
-  --primary-background-color: #fff;
-  --code-background: #d9d9d9;
-  --bg-gradient: linear-gradient(180deg, #fff 0%, #f9f9f9 100%);
+    --accent: #e0720f;
+    --accent-dark: #da6e00;
+    --primary-text-color: #000;
+    --primary-background-color: #fff;
+    --code-background: #d9d9d9;
+    --bg-gradient: linear-gradient(180deg, #fff 0%, #f9f9f9 100%);
 }
 
 .dark {
-  /* Dark Theme */
-  --accent: #e0720f; /* This can remain the same if it looks good on dark backgrounds */
-  --accent-dark: #da6e00; /* This can also remain the same or be adjusted for better visibility */
-  --primary-text-color: #fff; /* White text for dark backgrounds */
-  --primary-background-color: #303030; /* A deep grey for the primary background */
-  --code-background: #0a0f3c; /* A darker shade for code blocks */
-  --bg-gradient: linear-gradient(
-    180deg,
-    #333 0%,
-    #1a1a1a 100%
-  ); /* A dark gradient */
+    /* Dark Theme */
+    --accent: #e0720f; /* This can remain the same if it looks good on dark backgrounds */
+    --accent-dark: #da6e00; /* This can also remain the same or be adjusted for better visibility */
+    --primary-text-color: #fff; /* White text for dark backgrounds */
+    --primary-background-color: #303030; /* A deep grey for the primary background */
+    --code-background: #0a0f3c; /* A darker shade for code blocks */
+    --bg-gradient: linear-gradient(
+        180deg,
+        #333 0%,
+        #1a1a1a 100%
+    ); /* A dark gradient */
 }
 
 body {
-  font-family: "Atkinson Hyperlegible", sans-serif;
-  margin: 0;
-  padding: 0;
-  text-align: left;
-  background: var(--primary-background-color);
-  background-size: 100% 600px;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  color: var(--primary-text-color);
-  font-size: 20px;
-  line-height: 1.7;
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    background: var(--primary-background-color);
+    background-size: 100% 600px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    color: var(--primary-text-color);
+    font-size: 20px;
+    line-height: 1.7;
 }
 
 main {
-  width: 720px;
-  max-width: calc(100% - 2em);
-  margin: auto;
-  min-height: 70vh;
-  margin-top: 4em;
+    width: 720px;
+    max-width: calc(100% - 2em);
+    margin: auto;
+    min-height: 70vh;
+    margin-top: 4em;
 }
 
 h1,
@@ -67,150 +67,150 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0 0 0.5rem 0;
-  color: var(--primary-text-color);
-  line-height: 1.2;
+    margin: 0 0 0.5rem 0;
+    color: var(--primary-text-color);
+    line-height: 1.2;
 }
 
 h1 {
-  font-size: 3.052em;
+    font-size: 3.052em;
 }
 
 h2 {
-  font-size: 2.441em;
+    font-size: 2.441em;
 }
 
 h3 {
-  font-size: 1.953em;
+    font-size: 1.953em;
 }
 
 h4 {
-  font-size: 1.563em;
+    font-size: 1.563em;
 }
 
 h5 {
-  font-size: 1.25em;
+    font-size: 1.25em;
 }
 
 strong,
 b {
-  font-weight: 700;
+    font-weight: 700;
 }
 
 a {
-  color: var(--accent);
+    color: var(--accent);
 }
 
 a:hover {
-  color: var(--accent);
+    color: var(--accent);
 }
 
 p {
-  margin-bottom: 1em;
+    margin-bottom: 1em;
 }
 
 .prose p {
-  margin-bottom: 2em;
+    margin-bottom: 2em;
 }
 
 textarea {
-  width: 100%;
-  font-size: 16px;
+    width: 100%;
+    font-size: 16px;
 }
 
 input {
-  font-size: 16px;
+    font-size: 16px;
 }
 
 table {
-  width: 100%;
+    width: 100%;
 }
 
 img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
 }
 
 code {
-  padding: 2px 5px;
-  background-color: var(--code-background);
-  border-radius: 2px;
+    padding: 2px 5px;
+    background-color: var(--code-background);
+    border-radius: 2px;
 }
 
 pre {
-  padding: 1.5em;
-  border-radius: 8px;
+    padding: 1.5em;
+    border-radius: 8px;
 }
 
 pre > code {
-  all: unset;
+    all: unset;
 }
 
 blockquote {
-  border-left: 4px solid var(--accent);
-  padding: 0 0 0 20px;
-  margin: 0px;
-  font-size: 1.333em;
+    border-left: 4px solid var(--accent);
+    padding: 0 0 0 20px;
+    margin: 0px;
+    font-size: 1.333em;
 }
 
 hr {
-  border: none;
-  border-top: 1px solid rgb(var(--gray-light));
+    border: none;
+    border-top: 1px solid rgb(var(--gray-light));
 }
 
 header {
-  min-width: fit-content;
-  width: 720px;
-  margin: auto !important;
-  border-radius: 1.3em;
+    min-width: fit-content;
+    width: 720px;
+    margin: auto !important;
+    border-radius: 1.3em;
 }
 
 footer {
-  position: relative;
+    position: relative;
 }
 
 @media (max-width: 720px) {
-  body {
-    font-size: 18px;
-    height: 100vh;
-  }
+    body {
+        font-size: 18px;
+        height: 100vh;
+    }
 
-  main {
-    padding: 1em;
-    max-width: calc(100% - 2em);
-    margin: auto;
-  }
+    main {
+        padding: 1em;
+        max-width: calc(100% - 2em);
+        margin: auto;
+    }
 
-  navbarlogotext {
-    display: none;
-  }
+    navbarlogotext {
+        display: none;
+    }
 
-  header {
-    width: inherit;
-    margin: inherit;
-    border-radius: inherit;
-  }
+    header {
+        width: inherit;
+        margin: inherit;
+        border-radius: inherit;
+    }
 }
 
 .sr-only {
-  border: 0;
-  padding: 0;
-  margin: 0;
-  position: absolute !important;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  /* IE6, IE7 - a 0 height clip, off to the bottom right of the visible 1px box */
-  clip: rect(1px 1px 1px 1px);
-  /* maybe deprecated but we need to support legacy browsers */
-  clip: rect(1px, 1px, 1px, 1px);
-  /* modern browsers, clip-path works inwards from each corner */
-  clip-path: inset(50%);
-  /* added line to stop words getting smushed together (as they go onto seperate lines and some screen readers do not understand line feeds as a space */
-  white-space: nowrap;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    /* IE6, IE7 - a 0 height clip, off to the bottom right of the visible 1px box */
+    clip: rect(1px 1px 1px 1px);
+    /* maybe deprecated but we need to support legacy browsers */
+    clip: rect(1px, 1px, 1px, 1px);
+    /* modern browsers, clip-path works inwards from each corner */
+    clip-path: inset(50%);
+    /* added line to stop words getting smushed together (as they go onto seperate lines and some screen readers do not understand line feeds as a space */
+    white-space: nowrap;
 }
 
 .hidden {
-  display: none;
+    display: none;
 }
