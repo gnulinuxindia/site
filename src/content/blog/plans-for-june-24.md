@@ -1,5 +1,5 @@
 ---
-title: 'Plans for June: An ISP Blockage Data Aggregator Thingy'
+title: 'InternetChowkidar: An ISP Blockage Data Aggregator Thingy'
 description: 'Welcome to the first GLI project! We will be working on a data aggregrator thing this June.'
 pubDate: '2024-06-01'
 heroImage: '/glowies.jpeg'
@@ -12,10 +12,11 @@ June.
 
 ### Project Overview
 
-Our June project aims to create a tool that aggregates data on
-Internet Service Provider (ISP) blockages. This initiative is designed
-to monitor and record instances where certain websites are blocked or
-restricted by different ISPs across various regions.
+Our June project aims to create InternetChowkidar, a tool that
+aggregates data on Internet Service Provider (ISP) blockages. This
+initiative is designed to monitor and record instances where certain
+websites are blocked or restricted by different ISPs across various
+regions.
 
 ### The Tool: A Browser Extension
 
