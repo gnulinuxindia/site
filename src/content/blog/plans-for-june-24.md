@@ -2,6 +2,7 @@
 title: 'Plans for June: An ISP Blockage Data Aggregator Thingy'
 description: 'Welcome to the first GLI project! We will be working on a data aggregrator thing this June.'
 pubDate: '2024-06-01'
+heroImage: '/glowies.jpeg'
 author: 'tusharhero'
 ---
 
