@@ -12,7 +12,7 @@ June.
 
 ### Project Overview
 
-Our June project aims to create InternetChowkidar, a tool that
+Our June project aims to create [InternetChowkidar](https://github.com/gnulinuxindia/internet-chowkidar), a tool that
 aggregates data on Internet Service Provider (ISP) blockages. This
 initiative is designed to monitor and record instances where certain
 websites are blocked or restricted by different ISPs across various
@@ -44,7 +44,7 @@ in ISP behavior, ultimately promoting a more open internet.
 ### Get Involved!
 
 If you're interested in contributing to this project, please reach out
-to us on our GLI channels or forums. We're looking for passionate
+to us on our GLI channels, and the [git repository](https://github.com/gnulinuxindia/internet-chowkidar). We're looking for passionate
 individuals like you to join the development process and help bring
 this tool to life.
 
