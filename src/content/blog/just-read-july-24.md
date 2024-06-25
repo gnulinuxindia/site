@@ -40,7 +40,7 @@ To add your own recommendations, please send us a patch/PR.
 ## What members are reading
 To add your book to this, please send us a patch/PR.
 
-- <a href="/member/tusharhero">@tusharhero</a>: SICP
+- <a href="/members/tusharhero">@tusharhero</a>: SICP
 - @hasp from libera.chat: HTDP(How to Design Programs)
 
 Stay tuned for more details and updates on the GnuLinuxIndia Just Read
