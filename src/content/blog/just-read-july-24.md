@@ -42,6 +42,7 @@ To add your book to this, please send us a patch/PR.
 
 - <a href="/members/tusharhero">@tusharhero</a>: SICP
 - @hasp from libera.chat: HTDP(How to Design Programs)
+- <a href="/members/gtlsgamr">@gtlsgamr</a>: <a href="https://htdp.org">HDTP</a>
 
 Stay tuned for more details and updates on the GnuLinuxIndia Just Read
 July Challenge!
