@@ -2,6 +2,7 @@
 title: '*.bin - The Forgotten Art of Data Binarization'
 description: 'A forgotten method of high speed data transfer'
 pubDate: '2024-08-15'
+heroImage: '/binary.jpg'
 author: 's4m13337'
 ---
 
